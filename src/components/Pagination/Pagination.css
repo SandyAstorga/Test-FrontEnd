@@ -1,0 +1,20 @@
+/* Pagination */
+.pagination {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
+}
+.pagination button {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+.pagination svg {
+    width: 20px;
+    fill: black;
+}
+button:disabled{
+    filter: opacity(0);
+}

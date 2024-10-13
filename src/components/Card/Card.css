@@ -1,0 +1,23 @@
+/* Card */
+.container-card {
+    padding: 0.5rem;
+    background-color: transparent;
+    box-shadow: 2px 2px 2px 2px var(--bgPage);
+    border-radius: 0.4rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.container-card:hover {
+    box-shadow: 4px 4px 4px 4px var(--bgPage);
+}
+.image-card {
+    width: 45px;
+    height: 45px;
+    margin: 0.2rem;
+}
+.data-card {
+    font-size: clamp(0.45rem, 2.5vw, 0.6rem);
+    text-transform: capitalize;
+}

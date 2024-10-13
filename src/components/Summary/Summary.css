@@ -1,0 +1,16 @@
+/* Summary */
+table {
+    width: 50%;
+    border-collapse: collapse; 
+}
+.letter,
+.number {
+    text-align: center;
+}
+.letter td{
+    background-color: var(--bgListPokemons);
+    border-radius: 1rem;
+    padding: .2rem .3rem;
+    font-weight: 700;
+}
+

@@ -1,0 +1,104 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+
+:root {
+  /* Paleta de Colores */
+  --bgPage: #414152;
+  --bgListPokemons: #83739C;
+  --bgDetailPokemons: #AC94C5;
+  --neutral: #98C8DE;
+
+  /* Font */
+  --questrial: "Questrial", sans-serif;
+}
+
+/* General */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#root{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--questrial);
+  background-color: var(--bgPage);
+}
+
+
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .image-detail img {
+    width: 200px;
+    height: 200px;
+  }
+  .image-card {
+    width: 28px;
+    height: 28px;
+    margin: .5rem;
+  }
+  .container-list {
+    flex-direction: column-reverse;
+  }
+  .search-bar input {
+    width: 220px;
+  }
+  #count{
+    width: 95%;
+  }
+  table {
+    width: 90%;
+  }
+  input {
+    width: 200px;
+    height: 30px;
+  }
+  table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+  tr {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .letter,
+  .number {
+    flex: 1 1 50%;
+    box-sizing: border-box;
+  }
+  .letter td,
+  .number td {
+    border: none;
+    padding: 5px;
+  }
+  .loading {
+    width: 304px;
+  }
+}
+
+
+@media screen and (max-width: 990px) {
+  .container {
+    flex-direction: column-reverse;
+    width: 95vw;
+    gap: 1rem;
+  }
+  #list {
+    grid-template-columns: repeat(2, 1fr);
+    border-radius: 1.5rem 1.5rem 0 0;
+    width: 95vw;
+  }
+  #detail {
+    width: 95%;
+  }
+}

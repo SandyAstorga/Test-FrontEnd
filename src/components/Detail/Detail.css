@@ -1,0 +1,38 @@
+/* Detail */
+.first-data {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+    padding: .5rem;
+}
+.image-detail {
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+}
+.image-detail img {
+    width: 250px;
+    height: 250px;
+}
+.data-detail, .abilities-detail {
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.pokemon-type {
+    background-color: var(--neutral);
+    padding: .5rem .8rem;
+    border-radius: .7rem;
+    font-weight: 700;
+    font-size: clamp(.5rem, 2.5vw, .7rem);
+}
+.pokemon-ability {
+    background-color: var(--bgPage);
+    padding: .5rem .8rem;
+    border-radius: .7rem;
+    font-weight: 700;
+    color: white;
+    font-size: clamp(.5rem, 2.5vw, .7rem);
+}
